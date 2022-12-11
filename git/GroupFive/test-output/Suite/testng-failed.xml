@@ -3,14 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.groupfive.scripts.Knowledge_Test">
+      <class name="com.groupfive.scripts.ContactUs_Test">
         <methods>
-          <include name="logout"/>
-          <include name="Knowledge"/>
           <include name="onSetup"/>
-          <include name="login"/>
+          <include name="verifyContactUs"/>
         </methods>
-      </class> <!-- com.groupfive.scripts.Knowledge_Test -->
+      </class> <!-- com.groupfive.scripts.ContactUs_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

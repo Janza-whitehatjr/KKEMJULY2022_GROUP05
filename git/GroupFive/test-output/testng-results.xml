@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-10T15:14:24 IST" name="Default suite" finished-at="2022-12-10T15:14:51 IST" duration-ms="27011">
+  <suite started-at="2022-12-11T18:54:48 IST" name="Default suite" finished-at="2022-12-11T18:54:59 IST" duration-ms="10945">
     <groups>
     </groups>
-    <test started-at="2022-12-10T15:14:24 IST" name="Default test" finished-at="2022-12-10T15:14:51 IST" duration-ms="27011">
-      <class name="com.groupfive.scripts.Industrial_Test">
-        <test-method is-config="true" signature="onSetup()[pri:0, instance:com.groupfive.scripts.Industrial_Test@1e0b4072]" started-at="2022-12-10T15:14:24 IST" name="onSetup" finished-at="2022-12-10T15:14:40 IST" duration-ms="16590" status="PASS">
+    <test started-at="2022-12-11T18:54:48 IST" name="Default test" finished-at="2022-12-11T18:54:59 IST" duration-ms="10945">
+      <class name="com.groupfive.scripts.Patrons_Test">
+        <test-method is-config="true" signature="onSetup()[pri:0, instance:com.groupfive.scripts.Patrons_Test@5677323c]" started-at="2022-12-11T18:54:48 IST" name="onSetup" finished-at="2022-12-11T18:54:55 IST" duration-ms="7021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onSetup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.groupfive.scripts.Industrial_Test@1e0b4072]" started-at="2022-12-10T15:14:40 IST" name="login" finished-at="2022-12-10T15:14:41 IST" duration-ms="499" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.groupfive.scripts.Patrons_Test@5677323c]" started-at="2022-12-11T18:54:55 IST" name="login" finished-at="2022-12-11T18:54:56 IST" duration-ms="502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="Industrial()[pri:0, instance:com.groupfive.scripts.Industrial_Test@1e0b4072]" started-at="2022-12-10T15:14:41 IST" name="Industrial" finished-at="2022-12-10T15:14:51 IST" duration-ms="9907" status="PASS">
+        <test-method signature="Patrons()[pri:0, instance:com.groupfive.scripts.Patrons_Test@5677323c]" started-at="2022-12-11T18:54:56 IST" name="Patrons" finished-at="2022-12-11T18:54:59 IST" duration-ms="3407" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Industrial -->
-      </class> <!-- com.groupfive.scripts.Industrial_Test -->
+        </test-method> <!-- Patrons -->
+      </class> <!-- com.groupfive.scripts.Patrons_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

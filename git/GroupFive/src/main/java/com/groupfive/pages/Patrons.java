@@ -11,8 +11,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Patrons {
-	WebDriver driver;
+import com.base.Base;
+
+public class Patrons extends Base {
+	//WebDriver driver;
 
 	@FindBy(xpath = "//a[@routerlink='/adminpage/patrons']")
 	private WebElement know;
@@ -40,7 +42,7 @@ public class Patrons {
 
 	public void addimg() {
 		WebElement chooseFile = driver.findElement(By.xpath("//input[@formcontrolname='img']"));
-		chooseFile.sendKeys("/Users/arjun/git/REPO2/GroupFive/img/ictlogo.png");
+		chooseFile.sendKeys("/Users/arjun/git/GroupFive/img/ictlogo.png");
 	}
 
 	public void addfile() {

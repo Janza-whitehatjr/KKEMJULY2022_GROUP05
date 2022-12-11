@@ -11,8 +11,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Logout {
-	WebDriver driver;
+import com.base.Base;
+
+public class Logout extends Base {
+	//WebDriver driver;
 
 	@FindBy(xpath = "//span[text()='Admin']")
 	private WebElement admin;

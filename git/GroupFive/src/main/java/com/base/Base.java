@@ -1,4 +1,4 @@
-package com.groupfive.scripts;
+package com.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
-	WebDriver driver;
+public static WebDriver driver;
 	public static Properties prop = null;
 	String Safari_driverPath = "/usr/bin/safaridriver";
 
@@ -23,7 +23,7 @@ public class Base {
 
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("/Users/arjun/git/Main-project-G5/GroupFive/src/test/resources/config.properties");
+			FileInputStream ip = new FileInputStream("/Users/arjun/git/GroupFive/src/test/resources/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

@@ -15,15 +15,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Courses {
+import com.base.Base;
 
-	WebDriver driver;
+public class Courses extends Base {
+
+	//WebDriver driver;
 
 	@FindBy(xpath = "//a[@id=\"dropdownMenuBlocks\"][@routerlink='/LandingPage/courses']")
 	private WebElement ele;
-	@FindBy(xpath = "//*[@id=\"navigation\"]/ul/li[3]/ul/div[1]/li[3]/a/div/div/h6")
+	@FindBy(xpath = "//*[@id=\"navigation\"]/ul/li[3]/ul/div[1]/li[1]/a/div")
 	private WebElement clk;
-	@FindBy(xpath = "//button[@type=\"button\"][@class=\"btn bg-gradient-success w-auto me-2 ng-star-inserted\"]")
+	@FindBy(xpath = "/html/body/app-root/app-single-page/body/header/div[1]/div[1]/div/div/button")
 	private WebElement btn;
 	@FindBy(xpath = "//input[@name=\"name\"]")
 	private WebElement nam;

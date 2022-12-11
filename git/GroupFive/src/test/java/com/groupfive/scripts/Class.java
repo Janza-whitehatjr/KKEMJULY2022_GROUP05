@@ -7,6 +7,8 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 
+import com.base.Base;
+
 //import org.openqa.selenium.By;
 //import org.openqa.selenium.JavascriptExecutor;
 //import org.openqa.selenium.WebElement;
@@ -63,7 +65,7 @@ public class Class extends Base {
 		Courses.setmob("0011223344");
 		Courses.reg();
 		Courses.msg();
-		driver.close();
+		//driver.close();
 	}
 
 // COURSE <--
@@ -106,7 +108,7 @@ public class Class extends Base {
 		System.out.println(actualString);
 		assertTrue(actualString.contains("Successfully Added"));
 		knowledge.clk();
-		driver.close();
+		//driver.close();
 	}
 
 //Knowledge <--
@@ -125,7 +127,7 @@ public class Class extends Base {
 		System.out.println(actualString);
 		assertTrue(actualString.contains("Successfully Added"));
 		patrons.clk();
-		driver.close();
+	//driver.close();
 	}
 
 //Patrons <--
@@ -144,7 +146,7 @@ public class Class extends Base {
 		System.out.println(actualString);
 		assertTrue(actualString.contains("Successfully Added"));
 		Industrial.clk();
-		driver.close();
+		//driver.close();
 	}
 
 //Industrial <--

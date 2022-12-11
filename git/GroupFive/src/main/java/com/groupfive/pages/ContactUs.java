@@ -6,9 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ContactUs {
+import com.base.Base;
 
-	WebDriver driver;
+public class ContactUs extends Base{
+
+	//WebDriver driver;
 
 	@FindBy(xpath = "//*[@id=\"dropdownMenuPages\"][contains(text(), 'Contact Us')]")
 	private WebElement contactUs;
@@ -40,30 +42,29 @@ public class ContactUs {
 	public void setUsername(String setUsername) throws InterruptedException {
 
 		username.sendKeys(setUsername);
-		Thread.sleep(2000);
+		
 
 	}
 
 	public void setEmail(String setEmail) throws InterruptedException {
 		email.sendKeys(setEmail);
-		Thread.sleep(2000);
+		
 
 	}
 
 	public void setSubject(String setSubject) throws InterruptedException {
 		subject.sendKeys(setSubject);
-		Thread.sleep(2000);
+		
 
 	}
 
 	public void setMessage(String setMessage) throws InterruptedException {
 		message.sendKeys(setMessage);
-		Thread.sleep(2000);
-
+	
 	}
 
 	public String clickSendMessagebtn() throws InterruptedException {
-		Thread.sleep(500);
+		
 		SendMessagebtn.submit();
 		Alert alert = driver.switchTo().alert();
 		String actual = alert.getText();

@@ -4,6 +4,7 @@ package com.groupfive.scripts;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.base.Base;
 import com.groupfive.pages.LoginPage;
 import com.groupfive.pages.Logout;
 

@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
+import com.base.Base;
 import com.groupfive.pages.Courses;
 import com.groupfive.utility.XcelUtility;
 
@@ -23,6 +24,6 @@ public class Courses_Test extends Base{
 		Courses.setmob(SetPhone);
 		Courses.reg();
 		Courses.msg();
-		driver.close();
+		//driver.close();
 	}
 }

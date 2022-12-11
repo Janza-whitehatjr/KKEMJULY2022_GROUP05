@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import com.base.Base;
 import com.groupfive.pages.LoginPage;
 import com.groupfive.pages.Logout;
 import com.groupfive.utility.XcelUtility;

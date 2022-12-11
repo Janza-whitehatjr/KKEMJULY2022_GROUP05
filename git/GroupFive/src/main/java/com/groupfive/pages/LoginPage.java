@@ -6,8 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-WebDriver driver; 
+import com.base.Base;
+
+public class LoginPage extends Base{
+//WebDriver driver; 
 	
 
 	@FindBy(xpath="//a[text()=\"Login\"]")
@@ -18,6 +20,7 @@ WebDriver driver;
 	private WebElement psw;
 	@FindBy(xpath="//button[@type=\"submit\"]")
 	private WebElement submit;
+	
 	public LoginPage(WebDriver driver)
 	{
 		this.driver=driver;

@@ -12,8 +12,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Knowledge {
-	WebDriver driver;
+import com.base.Base;
+
+public class Knowledge extends Base {
+	//WebDriver driver;
 	@FindBy(xpath = "//a[@routerlink='/adminpage/knowledge'][@href='/adminpage/knowledge']")
 	private WebElement know;
 	@FindBy(xpath = "//a[@href='/adminpage/addknowledge']")
@@ -41,7 +43,7 @@ public class Knowledge {
 	public void addimg() {
 
 		WebElement chooseFile = driver.findElement(By.xpath("//input[@formcontrolname='img']"));
-		chooseFile.sendKeys("/Users/arjun/git/REPO2/GroupFive/img/ictlogo.png");
+		chooseFile.sendKeys("/Users/arjun/git/GroupFive/img/ictlogo.png");
 
 	}
 

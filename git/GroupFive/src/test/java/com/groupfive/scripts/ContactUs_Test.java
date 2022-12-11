@@ -1,11 +1,11 @@
 package com.groupfive.scripts;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import java.io.IOException;
 
-
-
+import com.base.Base;
 import com.groupfive.pages.ContactUs;
 import com.groupfive.utility.XcelUtility;
 
@@ -26,7 +26,7 @@ public class ContactUs_Test extends Base {
 		ContactUs.clickSendMessagebtn();
 		String actual = ContactUs.clickSendMessagebtn();
 		String Expected = "Message Send! Our Expert Team will Contact you Soon!";
-		AssertJUnit.assertEquals(actual, Expected);
+		Assert.assertEquals(actual, Expected);
 		
 	}
 	

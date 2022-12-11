@@ -7,6 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.base.Base;
 import com.groupfive.pages.LoginPage;
 import com.groupfive.pages.Logout;
 import com.groupfive.pages.Patrons;
@@ -33,15 +34,15 @@ public class Patrons_Test extends Base{
 		System.out.println(actualString);
 		assertTrue(actualString.contains("Successfully Added"));
 		patrons.clk();
-		driver.close();
-	}
-	@AfterMethod
-	public void logout() {
-		Logout logout;
-		logout = new Logout(driver);
-		logout.admin();
-		logout.logout();
 		
 	}
+//	@AfterMethod
+//	public void logout() {
+//		Logout logout;
+//		logout = new Logout(driver);
+//		logout.admin();
+//		logout.logout();
+//		
+//	}
 
 }
